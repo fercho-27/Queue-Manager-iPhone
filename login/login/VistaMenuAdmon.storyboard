@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vista Menu Admon Controller-->
+        <scene sceneID="964-Gp-Qh6">
+            <objects>
+                <viewController storyboardIdentifier="VistaMenuAdmon" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nKF-Ly-cFs" customClass="VistaMenuAdmonController" customModule="GestorColas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qrv-so-aRg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fondo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PZo-Le-tzC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4H-MT-TBB">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S63-5S-NtF">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADMINISTRADOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpV-z6-SK8">
+                                                <rect key="frame" x="60" y="10" width="200.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciu-9f-IDD">
+                                                <rect key="frame" x="87.5" y="49" width="145" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="CzR-hf-tnZ"/>
+                                                    <constraint firstAttribute="width" constant="145" id="uZM-pf-M9m"/>
+                                                </constraints>
+                                                <state key="normal" image="Imagenes/logo_fila.png"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREAR FILA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHp-aG-Hrs">
+                                                <rect key="frame" x="92" y="204" width="136" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0X-Sw-tRQ">
+                                                <rect key="frame" x="87.5" y="243" width="145" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="AeF-fx-nFl"/>
+                                                    <constraint firstAttribute="width" constant="145" id="bhY-ap-tvW"/>
+                                                </constraints>
+                                                <state key="normal" image="Imagenes/logo_administrar.png"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADMINISTRAR FILAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFC-MX-VCA">
+                                                <rect key="frame" x="42.5" y="398" width="235.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmO-BX-3vH">
+                                                <rect key="frame" x="87.5" y="437" width="145" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="66d-mP-Kgi"/>
+                                                    <constraint firstAttribute="width" constant="145" id="Irk-Sl-L5T"/>
+                                                </constraints>
+                                                <state key="normal" image="Imagenes/logo_salir.png"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SALIR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mni-CO-uSS">
+                                                <rect key="frame" x="126" y="592" width="68" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcI-20-Cqx">
+                                                <rect key="frame" x="135" y="646" width="50" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="KEI-RX-9qL"/>
+                                                    <constraint firstAttribute="height" constant="40" id="v2T-Kq-r7O"/>
+                                                </constraints>
+                                                <state key="normal" image="/Imagenes/logo_advertencia.png"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="jHp-aG-Hrs" firstAttribute="top" secondItem="ciu-9f-IDD" secondAttribute="bottom" constant="10" id="2ta-Xg-WOw"/>
+                                            <constraint firstItem="ciu-9f-IDD" firstAttribute="top" secondItem="bpV-z6-SK8" secondAttribute="bottom" constant="10" id="2yU-U1-dVh"/>
+                                            <constraint firstItem="dcI-20-Cqx" firstAttribute="top" secondItem="Mni-CO-uSS" secondAttribute="bottom" constant="25" id="EfW-5M-f3b"/>
+                                            <constraint firstItem="bpV-z6-SK8" firstAttribute="top" secondItem="S63-5S-NtF" secondAttribute="top" constant="10" id="O6T-zj-19m"/>
+                                            <constraint firstItem="Mni-CO-uSS" firstAttribute="top" secondItem="mmO-BX-3vH" secondAttribute="bottom" constant="10" id="SeC-VY-eyq"/>
+                                            <constraint firstItem="wFC-MX-VCA" firstAttribute="top" secondItem="T0X-Sw-tRQ" secondAttribute="bottom" constant="10" id="VYj-Iw-Sf2"/>
+                                            <constraint firstAttribute="height" constant="700" id="WJl-D9-vc5"/>
+                                            <constraint firstItem="mmO-BX-3vH" firstAttribute="top" secondItem="wFC-MX-VCA" secondAttribute="bottom" constant="10" id="jif-cM-Bpv"/>
+                                            <constraint firstItem="T0X-Sw-tRQ" firstAttribute="top" secondItem="jHp-aG-Hrs" secondAttribute="bottom" constant="10" id="sPY-K2-L4s"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jHp-aG-Hrs" firstAttribute="centerX" secondItem="b4H-MT-TBB" secondAttribute="centerX" id="3Ri-sY-CqH"/>
+                                    <constraint firstItem="ciu-9f-IDD" firstAttribute="centerX" secondItem="b4H-MT-TBB" secondAttribute="centerX" id="6K3-C6-yuG"/>
+                                    <constraint firstItem="Mni-CO-uSS" firstAttribute="centerX" secondItem="b4H-MT-TBB" secondAttribute="centerX" id="6ph-KZ-xeG"/>
+                                    <constraint firstItem="mmO-BX-3vH" firstAttribute="centerX" secondItem="b4H-MT-TBB" secondAttribute="centerX" id="GSq-oF-wyp"/>
+                                    <constraint firstItem="T0X-Sw-tRQ" firstAttribute="centerX" secondItem="b4H-MT-TBB" secondAttribute="centerX" id="Lj9-j2-84i"/>
+                                    <constraint firstItem="wFC-MX-VCA" firstAttribute="centerX" secondItem="b4H-MT-TBB" secondAttribute="centerX" id="QTY-WZ-ucM"/>
+                                    <constraint firstItem="S63-5S-NtF" firstAttribute="width" secondItem="b4H-MT-TBB" secondAttribute="width" id="R0t-mg-fLS"/>
+                                    <constraint firstAttribute="trailing" secondItem="S63-5S-NtF" secondAttribute="trailing" id="fTc-Rv-1kk"/>
+                                    <constraint firstItem="S63-5S-NtF" firstAttribute="top" secondItem="b4H-MT-TBB" secondAttribute="top" id="gxN-gb-88X"/>
+                                    <constraint firstItem="S63-5S-NtF" firstAttribute="leading" secondItem="b4H-MT-TBB" secondAttribute="leading" id="qjS-oU-K1j"/>
+                                    <constraint firstItem="dcI-20-Cqx" firstAttribute="centerX" secondItem="b4H-MT-TBB" secondAttribute="centerX" id="tqa-5g-Qvc"/>
+                                    <constraint firstItem="bpV-z6-SK8" firstAttribute="centerX" secondItem="b4H-MT-TBB" secondAttribute="centerX" id="xBQ-EY-g2q"/>
+                                    <constraint firstAttribute="bottom" secondItem="S63-5S-NtF" secondAttribute="bottom" id="yQ3-dx-zmh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b4H-MT-TBB" firstAttribute="leading" secondItem="qK1-EZ-9kz" secondAttribute="leading" id="fCQ-7G-toF"/>
+                            <constraint firstItem="b4H-MT-TBB" firstAttribute="top" secondItem="qK1-EZ-9kz" secondAttribute="top" id="otF-yP-B5R"/>
+                            <constraint firstItem="qK1-EZ-9kz" firstAttribute="bottom" secondItem="b4H-MT-TBB" secondAttribute="bottom" id="sSZ-Te-HBb"/>
+                            <constraint firstItem="qK1-EZ-9kz" firstAttribute="trailing" secondItem="b4H-MT-TBB" secondAttribute="trailing" id="zXk-S8-38s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qK1-EZ-9kz"/>
+                    </view>
+                    <connections>
+                        <outlet property="botonAdministrar" destination="T0X-Sw-tRQ" id="YW2-Bn-YPk"/>
+                        <outlet property="botonAdvertencia" destination="dcI-20-Cqx" id="IMI-uD-XGk"/>
+                        <outlet property="botonFila" destination="ciu-9f-IDD" id="6y6-5a-ZTc"/>
+                        <outlet property="botonsalir" destination="mmO-BX-3vH" id="40v-pz-kue"/>
+                        <outlet property="etiquetaAdministrar" destination="wFC-MX-VCA" id="VIE-tF-FXF"/>
+                        <outlet property="etiquetaAdmon" destination="bpV-z6-SK8" id="G0z-s9-yur"/>
+                        <outlet property="etiquetaCrear" destination="jHp-aG-Hrs" id="jLu-fo-faD"/>
+                        <outlet property="etiquetaSalir" destination="Mni-CO-uSS" id="d3h-Nu-EiQ"/>
+                        <outlet property="imagenFondo" destination="PZo-Le-tzC" id="lvS-di-WXb"/>
+                        <outlet property="scroll" destination="b4H-MT-TBB" id="mhO-rI-K7t"/>
+                        <outlet property="vistaScroll" destination="S63-5S-NtF" id="zcr-Ze-9zk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5S-79-9G1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.34375" y="100.1953125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="/Imagenes/logo_advertencia.png" width="16" height="16"/>
+        <image name="Imagenes/logo_administrar.png" width="16" height="16"/>
+        <image name="Imagenes/logo_fila.png" width="16" height="16"/>
+        <image name="Imagenes/logo_salir.png" width="16" height="16"/>
+        <image name="fondo.jpg" width="512" height="800"/>
+    </resources>
+</document>

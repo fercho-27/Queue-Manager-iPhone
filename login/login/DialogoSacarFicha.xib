@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogoSacarFichaController" customModule="GestorColas" customModuleProvider="target">
+            <connections>
+                <outlet property="altura" destination="4j5-qg-FWM" id="t5q-kr-cNs"/>
+                <outlet property="botonCancelar" destination="YS6-hJ-Xar" id="YxY-ky-1sw"/>
+                <outlet property="botonConfirmar" destination="xCl-C2-ne9" id="hVJ-6h-9MT"/>
+                <outlet property="etiquetaFila" destination="Jnb-VL-2nE" id="h3a-qh-jLo"/>
+                <outlet property="scroll" destination="4Mk-NM-BjM" id="MlC-ZF-UWD"/>
+                <outlet property="view" destination="y6B-W5-JSz" id="zlY-Q3-Q7d"/>
+                <outlet property="vistaScroll" destination="aMO-g9-Ruq" id="eXA-q6-rhu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="y6B-W5-JSz" userLabel="AlertView">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="412"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="iconoapp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kPE-cs-B4s">
+                    <rect key="frame" x="20" y="16" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="0fC-34-03Z"/>
+                        <constraint firstAttribute="height" constant="40" id="tkq-p7-kQR"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCl-C2-ne9">
+                    <rect key="frame" x="182" y="372" width="87" height="30"/>
+                    <state key="normal" title="CONFIRMAR">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS6-hJ-Xar">
+                    <rect key="frame" x="74" y="372" width="78" height="30"/>
+                    <state key="normal" title="CANCELAR">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnb-VL-2nE">
+                    <rect key="frame" x="10" y="65" width="269" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLz-pH-tMV" userLabel="DividerView">
+                    <rect key="frame" x="0.0" y="184" width="289" height="183"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecciona la hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rd-em-nIg">
+                    <rect key="frame" x="68" y="26" width="205" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mk-NM-BjM">
+                    <rect key="frame" x="0.0" y="68" width="289" height="294"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMO-g9-Ruq">
+                            <rect key="frame" x="0.0" y="0.0" width="289" height="550"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="550" id="4j5-qg-FWM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="aMO-g9-Ruq" firstAttribute="leading" secondItem="4Mk-NM-BjM" secondAttribute="leading" id="1IW-MF-Zor"/>
+                        <constraint firstAttribute="trailing" secondItem="aMO-g9-Ruq" secondAttribute="trailing" id="PLn-cb-CI9"/>
+                        <constraint firstAttribute="bottom" secondItem="aMO-g9-Ruq" secondAttribute="bottom" id="fWr-uf-ou0"/>
+                        <constraint firstItem="aMO-g9-Ruq" firstAttribute="top" secondItem="4Mk-NM-BjM" secondAttribute="top" id="pI4-7W-H7X"/>
+                        <constraint firstItem="aMO-g9-Ruq" firstAttribute="width" secondItem="4Mk-NM-BjM" secondAttribute="width" id="u2h-LX-VWb"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jnb-VL-2nE" firstAttribute="leading" secondItem="y6B-W5-JSz" secondAttribute="leading" constant="10" id="56i-hf-LwB"/>
+                <constraint firstItem="or8-cD-man" firstAttribute="bottom" secondItem="xCl-C2-ne9" secondAttribute="bottom" constant="10" id="7jK-Wt-zbM"/>
+                <constraint firstItem="4Mk-NM-BjM" firstAttribute="top" secondItem="Jnb-VL-2nE" secondAttribute="bottom" constant="3" id="FbA-Sh-jd9"/>
+                <constraint firstItem="4Mk-NM-BjM" firstAttribute="trailing" secondItem="or8-cD-man" secondAttribute="trailing" id="GqT-j0-lJ1"/>
+                <constraint firstItem="kPE-cs-B4s" firstAttribute="top" secondItem="or8-cD-man" secondAttribute="top" constant="16" id="J2q-m1-7Kb"/>
+                <constraint firstAttribute="trailing" secondItem="Jnb-VL-2nE" secondAttribute="trailing" constant="10" id="Mso-QA-QNs"/>
+                <constraint firstItem="JLz-pH-tMV" firstAttribute="trailing" secondItem="4Mk-NM-BjM" secondAttribute="trailing" id="NUS-uE-gFt"/>
+                <constraint firstItem="xCl-C2-ne9" firstAttribute="top" secondItem="JLz-pH-tMV" secondAttribute="bottom" constant="5" id="b9j-75-kAY"/>
+                <constraint firstItem="kPE-cs-B4s" firstAttribute="leading" secondItem="or8-cD-man" secondAttribute="leading" constant="20" id="g53-Kz-FmQ"/>
+                <constraint firstItem="JLz-pH-tMV" firstAttribute="top" secondItem="or8-cD-man" secondAttribute="top" constant="184" id="j6h-k2-hgg"/>
+                <constraint firstItem="xCl-C2-ne9" firstAttribute="top" secondItem="4Mk-NM-BjM" secondAttribute="bottom" constant="10" id="krQ-vY-MiA"/>
+                <constraint firstItem="4Mk-NM-BjM" firstAttribute="leading" secondItem="or8-cD-man" secondAttribute="leading" id="oTa-WQ-BO8"/>
+                <constraint firstAttribute="trailing" secondItem="xCl-C2-ne9" secondAttribute="trailing" constant="20" id="opr-uY-cV0"/>
+                <constraint firstItem="xCl-C2-ne9" firstAttribute="leading" secondItem="YS6-hJ-Xar" secondAttribute="trailing" constant="30" id="v2p-g0-YUS"/>
+                <constraint firstItem="JLz-pH-tMV" firstAttribute="leading" secondItem="4Mk-NM-BjM" secondAttribute="leading" id="w3n-yM-jc5"/>
+                <constraint firstItem="YS6-hJ-Xar" firstAttribute="top" secondItem="4Mk-NM-BjM" secondAttribute="bottom" constant="10" id="yG9-D1-g7J"/>
+                <constraint firstItem="Jnb-VL-2nE" firstAttribute="top" secondItem="y6B-W5-JSz" secondAttribute="top" constant="65" id="z5x-cP-xZh"/>
+                <constraint firstItem="xCl-C2-ne9" firstAttribute="top" secondItem="4Mk-NM-BjM" secondAttribute="bottom" constant="10" id="z6L-da-RAj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="or8-cD-man"/>
+            <point key="canvasLocation" x="56.5" y="15"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconoapp.jpg" width="653" height="652"/>
+    </resources>
+</document>

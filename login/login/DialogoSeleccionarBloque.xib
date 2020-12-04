@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogoSeleccionarBloqueController" customModule="GestorColas" customModuleProvider="target">
+            <connections>
+                <outlet property="altura" destination="2W1-W9-YvY" id="EEe-54-1yl"/>
+                <outlet property="botonCancelar" destination="4mJ-mr-7z8" id="KK1-gC-LNN"/>
+                <outlet property="botonConfirmar" destination="Dsl-bD-UwX" id="skN-B9-Dge"/>
+                <outlet property="etiquetaFila" destination="wSY-Ve-ecK" id="M6S-7K-Vpo"/>
+                <outlet property="scroll" destination="2eV-MM-HXE" id="imH-tu-eVp"/>
+                <outlet property="view" destination="ASI-hS-WxN" id="Afh-YK-u5X"/>
+                <outlet property="vistaScroll" destination="ZpQ-YD-Q7e" id="Y7Q-F0-aaj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ASI-hS-WxN" userLabel="AlertView">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="412"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="iconoapp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OXD-vq-tGV">
+                    <rect key="frame" x="20" y="16" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Kd8-cT-E8d"/>
+                        <constraint firstAttribute="height" constant="40" id="bSI-Ak-6fC"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsl-bD-UwX">
+                    <rect key="frame" x="182" y="372" width="87" height="30"/>
+                    <state key="normal" title="CONFIRMAR">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mJ-mr-7z8">
+                    <rect key="frame" x="74" y="372" width="78" height="30"/>
+                    <state key="normal" title="CANCELAR">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSY-Ve-ecK">
+                    <rect key="frame" x="10" y="65" width="269" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f78-ya-wtQ" userLabel="DividerView">
+                    <rect key="frame" x="0.0" y="184" width="289" height="183"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecciona la hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQt-0V-hjS">
+                    <rect key="frame" x="68" y="26" width="205" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eV-MM-HXE">
+                    <rect key="frame" x="0.0" y="68" width="289" height="294"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZpQ-YD-Q7e">
+                            <rect key="frame" x="0.0" y="0.0" width="289" height="550"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="550" id="2W1-W9-YvY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ZpQ-YD-Q7e" firstAttribute="width" secondItem="2eV-MM-HXE" secondAttribute="width" id="9Ss-89-d0Z"/>
+                        <constraint firstAttribute="trailing" secondItem="ZpQ-YD-Q7e" secondAttribute="trailing" id="X2t-zN-fXP"/>
+                        <constraint firstItem="ZpQ-YD-Q7e" firstAttribute="leading" secondItem="2eV-MM-HXE" secondAttribute="leading" id="bpp-gK-myd"/>
+                        <constraint firstAttribute="bottom" secondItem="ZpQ-YD-Q7e" secondAttribute="bottom" id="gbt-Gs-TLy"/>
+                        <constraint firstItem="ZpQ-YD-Q7e" firstAttribute="top" secondItem="2eV-MM-HXE" secondAttribute="top" id="xno-gL-TB1"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Dsl-bD-UwX" firstAttribute="top" secondItem="f78-ya-wtQ" secondAttribute="bottom" constant="5" id="1cF-il-Y0j"/>
+                <constraint firstItem="TpT-J1-7E4" firstAttribute="bottom" secondItem="Dsl-bD-UwX" secondAttribute="bottom" constant="10" id="3IM-tY-Xh6"/>
+                <constraint firstItem="f78-ya-wtQ" firstAttribute="leading" secondItem="2eV-MM-HXE" secondAttribute="leading" id="563-Bm-bVu"/>
+                <constraint firstItem="wSY-Ve-ecK" firstAttribute="top" secondItem="ASI-hS-WxN" secondAttribute="top" constant="65" id="6gF-1B-ySN"/>
+                <constraint firstItem="2eV-MM-HXE" firstAttribute="leading" secondItem="TpT-J1-7E4" secondAttribute="leading" id="6lY-Ro-KJn"/>
+                <constraint firstItem="OXD-vq-tGV" firstAttribute="top" secondItem="TpT-J1-7E4" secondAttribute="top" constant="16" id="6v6-zm-ll3"/>
+                <constraint firstItem="Dsl-bD-UwX" firstAttribute="top" secondItem="2eV-MM-HXE" secondAttribute="bottom" constant="10" id="9r7-B3-dN9"/>
+                <constraint firstItem="wSY-Ve-ecK" firstAttribute="leading" secondItem="ASI-hS-WxN" secondAttribute="leading" constant="10" id="ErD-u5-y0R"/>
+                <constraint firstItem="f78-ya-wtQ" firstAttribute="trailing" secondItem="2eV-MM-HXE" secondAttribute="trailing" id="Jha-x6-Sca"/>
+                <constraint firstItem="OXD-vq-tGV" firstAttribute="leading" secondItem="TpT-J1-7E4" secondAttribute="leading" constant="20" id="LSu-6m-y0R"/>
+                <constraint firstItem="Dsl-bD-UwX" firstAttribute="top" secondItem="2eV-MM-HXE" secondAttribute="bottom" constant="10" id="M1b-QE-OgK"/>
+                <constraint firstItem="4mJ-mr-7z8" firstAttribute="top" secondItem="2eV-MM-HXE" secondAttribute="bottom" constant="10" id="SOJ-RH-fG5"/>
+                <constraint firstAttribute="trailing" secondItem="Dsl-bD-UwX" secondAttribute="trailing" constant="20" id="bkv-75-m6z"/>
+                <constraint firstAttribute="trailing" secondItem="wSY-Ve-ecK" secondAttribute="trailing" constant="10" id="c27-xi-NeS"/>
+                <constraint firstItem="f78-ya-wtQ" firstAttribute="top" secondItem="TpT-J1-7E4" secondAttribute="top" constant="184" id="ccd-kw-M9h"/>
+                <constraint firstItem="2eV-MM-HXE" firstAttribute="top" secondItem="wSY-Ve-ecK" secondAttribute="bottom" constant="3" id="e3f-4h-KNe"/>
+                <constraint firstItem="2eV-MM-HXE" firstAttribute="trailing" secondItem="TpT-J1-7E4" secondAttribute="trailing" id="r6j-GD-qHj"/>
+                <constraint firstItem="Dsl-bD-UwX" firstAttribute="leading" secondItem="4mJ-mr-7z8" secondAttribute="trailing" constant="30" id="vJh-uH-ka0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="TpT-J1-7E4"/>
+            <point key="canvasLocation" x="56.5" y="15"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconoapp.jpg" width="653" height="652"/>
+    </resources>
+</document>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogoSemestresController" customModule="GestorColas" customModuleProvider="target">
+            <connections>
+                <outlet property="botonCancelar" destination="9l6-AQ-tT3" id="rko-57-fzu"/>
+                <outlet property="botonConfirmar" destination="rES-Yz-ozz" id="P57-Xs-Ixo"/>
+                <outlet property="scroll" destination="keO-Fu-3bx" id="Imk-LF-Xjc"/>
+                <outlet property="switchCero" destination="xGU-yD-sXp" id="VWT-Zw-7kq"/>
+                <outlet property="switchCinco" destination="4GD-3Q-vo4" id="5Uo-pi-U3w"/>
+                <outlet property="switchCuatro" destination="XBD-Yp-WKc" id="4vy-ro-WAu"/>
+                <outlet property="switchDos" destination="x2D-8a-i8x" id="t0e-m4-gZa"/>
+                <outlet property="switchNueve" destination="FCM-HM-tci" id="qO1-Cb-4dV"/>
+                <outlet property="switchOcho" destination="JAv-xJ-V5j" id="J3W-IJ-pDY"/>
+                <outlet property="switchOtros" destination="DEY-hz-SIU" id="iWx-r7-s3U"/>
+                <outlet property="switchSeis" destination="03M-8Y-mW1" id="eGT-u7-oKb"/>
+                <outlet property="switchSiete" destination="6vz-TI-Y4G" id="c5T-OC-LQk"/>
+                <outlet property="switchTodos" destination="mJW-ll-6Tn" id="r3e-eh-1VL"/>
+                <outlet property="switchTres" destination="8NI-LE-wvu" id="hsX-HU-k5F"/>
+                <outlet property="switchUno" destination="bz3-l7-Rca" id="v3x-MB-dzs"/>
+                <outlet property="view" destination="A5t-PF-QBu" id="gIi-w7-S2t"/>
+                <outlet property="vistaScroll" destination="xpK-yh-gfq" id="WOV-M7-mMT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="A5t-PF-QBu" userLabel="AlertView">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="412"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="iconoapp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DWz-AJ-v9R">
+                    <rect key="frame" x="20" y="16" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="WSv-za-nnO"/>
+                        <constraint firstAttribute="height" constant="40" id="lbo-Vn-7Fs"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rES-Yz-ozz">
+                    <rect key="frame" x="182" y="372" width="87" height="30"/>
+                    <state key="normal" title="CONFIRMAR">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9l6-AQ-tT3">
+                    <rect key="frame" x="74" y="372" width="78" height="30"/>
+                    <state key="normal" title="CANCELAR">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mfZ-zT-5Tw" userLabel="DividerView">
+                    <rect key="frame" x="0.0" y="184" width="289" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecciona los semestres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k6-Px-0ip">
+                    <rect key="frame" x="68" y="26" width="205" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keO-Fu-3bx">
+                    <rect key="frame" x="0.0" y="64" width="289" height="298"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpK-yh-gfq">
+                            <rect key="frame" x="0.0" y="0.0" width="289" height="550"/>
+                            <subviews>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xGU-yD-sXp">
+                                    <rect key="frame" x="18" y="4.5" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoCambiar:" destination="-1" eventType="valueChanged" id="0kc-Rb-okh"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEMESTRE CERO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZ5-OO-AoG">
+                                    <rect key="frame" x="92" y="10" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-l7-Rca">
+                                    <rect key="frame" x="18" y="44" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoCambiar:" destination="-1" eventType="valueChanged" id="IKI-hO-7mS"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRIMER SEMESTRE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xs-l2-XxW">
+                                    <rect key="frame" x="92" y="49.5" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x2D-8a-i8x">
+                                    <rect key="frame" x="18" y="83" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoCambiar:" destination="-1" eventType="valueChanged" id="5rJ-Dr-GLy"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEGUNDO SEMESTRE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5I-VR-01W">
+                                    <rect key="frame" x="92" y="89" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8NI-LE-wvu">
+                                    <rect key="frame" x="18" y="122.5" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoCambiar:" destination="-1" eventType="valueChanged" id="pzg-HZ-CKm"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TERCER SEMESTRE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mn9-BC-5OZ">
+                                    <rect key="frame" x="92" y="128.5" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XBD-Yp-WKc">
+                                    <rect key="frame" x="18" y="162" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoCambiar:" destination="-1" eventType="valueChanged" id="2Ss-ef-by3"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CUARTO SEMESTRE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eml-jJ-dxm">
+                                    <rect key="frame" x="92" y="168" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4GD-3Q-vo4">
+                                    <rect key="frame" x="18" y="201" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoCambiar:" destination="-1" eventType="valueChanged" id="MO1-xe-iaI"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUINTO SEMESTRE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdi-bF-Laz">
+                                    <rect key="frame" x="92" y="207.5" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="03M-8Y-mW1">
+                                    <rect key="frame" x="18" y="241.5" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoCambiar:" destination="-1" eventType="valueChanged" id="bFh-Uf-fTw"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEXTO SEMESTRE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaf-jb-LeB">
+                                    <rect key="frame" x="92" y="247" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6vz-TI-Y4G">
+                                    <rect key="frame" x="18" y="280.5" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoCambiar:" destination="-1" eventType="valueChanged" id="fDB-u6-3zO"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SÉPTIMO SEMESTRE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMm-1y-Kck">
+                                    <rect key="frame" x="92" y="286.5" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JAv-xJ-V5j">
+                                    <rect key="frame" x="18" y="320" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoCambiar:" destination="-1" eventType="valueChanged" id="ccP-GY-fJQ"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OCTAVO SEMESTRE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXD-D7-NsR">
+                                    <rect key="frame" x="92" y="326" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FCM-HM-tci">
+                                    <rect key="frame" x="18" y="359.5" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoCambiar:" destination="-1" eventType="valueChanged" id="Lfj-Ua-df9"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOVENO SEMESTRE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3A-i4-NEX">
+                                    <rect key="frame" x="92" y="365.5" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DEY-hz-SIU">
+                                    <rect key="frame" x="18" y="399" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoCambiar:" destination="-1" eventType="valueChanged" id="s61-4D-dEa"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTROS SEMESTRES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqR-or-Spe">
+                                    <rect key="frame" x="92" y="405" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mJW-ll-6Tn">
+                                    <rect key="frame" x="18" y="438.5" width="51" height="31"/>
+                                    <connections>
+                                        <action selector="eventoTodos:" destination="-1" eventType="valueChanged" id="aq5-Z4-MR5"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODOS LOS SEMESTRES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1t-6d-mCh">
+                                    <rect key="frame" x="92" y="444.5" width="173.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="yqR-or-Spe" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="3B6-fh-BMX"/>
+                                <constraint firstItem="P5I-VR-01W" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="4dO-fu-Riu"/>
+                                <constraint firstItem="Kdi-bF-Laz" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="5ZX-mf-eg8"/>
+                                <constraint firstItem="vXD-D7-NsR" firstAttribute="leading" secondItem="JAv-xJ-V5j" secondAttribute="trailing" constant="25" id="7P8-jd-igp"/>
+                                <constraint firstItem="RZ5-OO-AoG" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="7Vn-8Y-Skb"/>
+                                <constraint firstItem="03M-8Y-mW1" firstAttribute="centerY" secondItem="zaf-jb-LeB" secondAttribute="centerY" id="AH7-7c-Qiw"/>
+                                <constraint firstItem="FCM-HM-tci" firstAttribute="centerY" secondItem="J3A-i4-NEX" secondAttribute="centerY" id="B2V-dK-XtN"/>
+                                <constraint firstItem="yqR-or-Spe" firstAttribute="top" secondItem="J3A-i4-NEX" secondAttribute="bottom" constant="20" id="BoV-a2-NIs"/>
+                                <constraint firstItem="LMm-1y-Kck" firstAttribute="top" secondItem="zaf-jb-LeB" secondAttribute="bottom" constant="20" id="DID-UG-rOe"/>
+                                <constraint firstItem="JAv-xJ-V5j" firstAttribute="centerY" secondItem="vXD-D7-NsR" secondAttribute="centerY" id="EnS-0v-5hG"/>
+                                <constraint firstItem="8NI-LE-wvu" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="FMN-eY-iyP"/>
+                                <constraint firstItem="XBD-Yp-WKc" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="FQD-2m-gpG"/>
+                                <constraint firstItem="J3A-i4-NEX" firstAttribute="leading" secondItem="FCM-HM-tci" secondAttribute="trailing" constant="25" id="Fvc-bN-hU9"/>
+                                <constraint firstItem="Mn9-BC-5OZ" firstAttribute="top" secondItem="P5I-VR-01W" secondAttribute="bottom" constant="20" id="Gzl-KZ-RCl"/>
+                                <constraint firstItem="4GD-3Q-vo4" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="JZw-Hf-ZGF"/>
+                                <constraint firstItem="6vz-TI-Y4G" firstAttribute="centerY" secondItem="LMm-1y-Kck" secondAttribute="centerY" id="LRM-QR-rV5"/>
+                                <constraint firstItem="xGU-yD-sXp" firstAttribute="centerY" secondItem="RZ5-OO-AoG" secondAttribute="centerY" id="M5E-25-0R4"/>
+                                <constraint firstItem="8xs-l2-XxW" firstAttribute="top" secondItem="RZ5-OO-AoG" secondAttribute="bottom" constant="20" id="N5T-eZ-8pi"/>
+                                <constraint firstItem="x2D-8a-i8x" firstAttribute="centerY" secondItem="P5I-VR-01W" secondAttribute="centerY" id="NkG-Q1-lgA"/>
+                                <constraint firstItem="LMm-1y-Kck" firstAttribute="leading" secondItem="6vz-TI-Y4G" secondAttribute="trailing" constant="25" id="Q0C-vp-UDq"/>
+                                <constraint firstItem="zaf-jb-LeB" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="Qn4-yb-uIk"/>
+                                <constraint firstItem="zaf-jb-LeB" firstAttribute="top" secondItem="Kdi-bF-Laz" secondAttribute="bottom" constant="20" id="TjG-Gh-89A"/>
+                                <constraint firstItem="J3A-i4-NEX" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="VdH-6S-Kxn"/>
+                                <constraint firstItem="J3A-i4-NEX" firstAttribute="top" secondItem="vXD-D7-NsR" secondAttribute="bottom" constant="20" id="Vtt-Ux-zOm"/>
+                                <constraint firstItem="xGU-yD-sXp" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="WT0-Hj-EFr"/>
+                                <constraint firstItem="LMm-1y-Kck" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="XrZ-UG-z9O"/>
+                                <constraint firstItem="eml-jJ-dxm" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="ZyD-er-LZ8"/>
+                                <constraint firstItem="Mn9-BC-5OZ" firstAttribute="leading" secondItem="8NI-LE-wvu" secondAttribute="trailing" constant="25" id="aRw-1s-EHy"/>
+                                <constraint firstItem="XBD-Yp-WKc" firstAttribute="centerY" secondItem="eml-jJ-dxm" secondAttribute="centerY" id="bau-QD-6ck"/>
+                                <constraint firstItem="bz3-l7-Rca" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="c6G-fj-klH"/>
+                                <constraint firstItem="JAv-xJ-V5j" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="c80-Bp-MCh"/>
+                                <constraint firstItem="D1t-6d-mCh" firstAttribute="leading" secondItem="mJW-ll-6Tn" secondAttribute="trailing" constant="25" id="dRM-lX-5o0"/>
+                                <constraint firstItem="P5I-VR-01W" firstAttribute="leading" secondItem="x2D-8a-i8x" secondAttribute="trailing" constant="25" id="gID-ea-4oR"/>
+                                <constraint firstItem="8NI-LE-wvu" firstAttribute="centerY" secondItem="Mn9-BC-5OZ" secondAttribute="centerY" id="gfy-aw-8Ft"/>
+                                <constraint firstItem="bz3-l7-Rca" firstAttribute="centerY" secondItem="8xs-l2-XxW" secondAttribute="centerY" id="hIN-HN-pGB"/>
+                                <constraint firstItem="mJW-ll-6Tn" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="hYf-Uc-xY3"/>
+                                <constraint firstItem="8xs-l2-XxW" firstAttribute="leading" secondItem="bz3-l7-Rca" secondAttribute="trailing" constant="25" id="heB-Sf-F57"/>
+                                <constraint firstItem="8xs-l2-XxW" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="inb-XO-c3g"/>
+                                <constraint firstItem="Mn9-BC-5OZ" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="iuQ-Wi-vDe"/>
+                                <constraint firstItem="eml-jJ-dxm" firstAttribute="leading" secondItem="XBD-Yp-WKc" secondAttribute="trailing" constant="25" id="jGM-n8-NFU"/>
+                                <constraint firstItem="Kdi-bF-Laz" firstAttribute="top" secondItem="eml-jJ-dxm" secondAttribute="bottom" constant="20" id="lbU-sW-UsT"/>
+                                <constraint firstAttribute="height" constant="550" id="lsZ-Tb-qo2"/>
+                                <constraint firstItem="03M-8Y-mW1" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="nQg-zL-pVL"/>
+                                <constraint firstItem="4GD-3Q-vo4" firstAttribute="centerY" secondItem="Kdi-bF-Laz" secondAttribute="centerY" id="o1c-0p-r7z"/>
+                                <constraint firstItem="Kdi-bF-Laz" firstAttribute="leading" secondItem="4GD-3Q-vo4" secondAttribute="trailing" constant="25" id="qgL-Qn-Gj8"/>
+                                <constraint firstItem="D1t-6d-mCh" firstAttribute="top" secondItem="yqR-or-Spe" secondAttribute="bottom" constant="20" id="r7i-tW-0BX"/>
+                                <constraint firstItem="vXD-D7-NsR" firstAttribute="top" secondItem="LMm-1y-Kck" secondAttribute="bottom" constant="20" id="rLP-ac-KMF"/>
+                                <constraint firstItem="x2D-8a-i8x" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="s3Y-Kz-w1H"/>
+                                <constraint firstItem="P5I-VR-01W" firstAttribute="top" secondItem="8xs-l2-XxW" secondAttribute="bottom" constant="20" id="sJn-2m-Kbx"/>
+                                <constraint firstItem="DEY-hz-SIU" firstAttribute="centerY" secondItem="yqR-or-Spe" secondAttribute="centerY" id="ssQ-z3-5eR"/>
+                                <constraint firstItem="RZ5-OO-AoG" firstAttribute="top" secondItem="xpK-yh-gfq" secondAttribute="top" constant="10" id="tix-tk-Xzo"/>
+                                <constraint firstItem="DEY-hz-SIU" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="ugm-Ru-yF0"/>
+                                <constraint firstItem="mJW-ll-6Tn" firstAttribute="centerY" secondItem="D1t-6d-mCh" secondAttribute="centerY" id="ut4-u6-Nvg"/>
+                                <constraint firstItem="eml-jJ-dxm" firstAttribute="top" secondItem="Mn9-BC-5OZ" secondAttribute="bottom" constant="20" id="vwG-6P-E9s"/>
+                                <constraint firstItem="yqR-or-Spe" firstAttribute="leading" secondItem="DEY-hz-SIU" secondAttribute="trailing" constant="25" id="wqc-mv-fLy"/>
+                                <constraint firstItem="D1t-6d-mCh" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="wxb-O4-cfG"/>
+                                <constraint firstItem="FCM-HM-tci" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="xVd-li-3GY"/>
+                                <constraint firstItem="RZ5-OO-AoG" firstAttribute="leading" secondItem="xGU-yD-sXp" secondAttribute="trailing" constant="25" id="xdT-MH-nJq"/>
+                                <constraint firstItem="zaf-jb-LeB" firstAttribute="leading" secondItem="03M-8Y-mW1" secondAttribute="trailing" constant="25" id="xia-rZ-3qe"/>
+                                <constraint firstItem="vXD-D7-NsR" firstAttribute="width" secondItem="xpK-yh-gfq" secondAttribute="width" multiplier="0.6" id="xxJ-O0-llD"/>
+                                <constraint firstItem="6vz-TI-Y4G" firstAttribute="leading" secondItem="xpK-yh-gfq" secondAttribute="leadingMargin" constant="10" id="z7e-he-Dxq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xpK-yh-gfq" firstAttribute="top" secondItem="keO-Fu-3bx" secondAttribute="top" id="LrA-X0-7q9"/>
+                        <constraint firstItem="xpK-yh-gfq" firstAttribute="width" secondItem="keO-Fu-3bx" secondAttribute="width" id="NFU-LW-LfU"/>
+                        <constraint firstAttribute="bottom" secondItem="xpK-yh-gfq" secondAttribute="bottom" id="Zih-67-Id7"/>
+                        <constraint firstItem="xpK-yh-gfq" firstAttribute="leading" secondItem="keO-Fu-3bx" secondAttribute="leading" id="dHr-CL-7vJ"/>
+                        <constraint firstAttribute="trailing" secondItem="xpK-yh-gfq" secondAttribute="trailing" id="nR3-q5-ydo"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DWz-AJ-v9R" firstAttribute="top" secondItem="Yqh-As-U3k" secondAttribute="top" constant="16" id="0ga-k3-ii3"/>
+                <constraint firstItem="rES-Yz-ozz" firstAttribute="leading" secondItem="9l6-AQ-tT3" secondAttribute="trailing" constant="30" id="1OC-RY-o07"/>
+                <constraint firstItem="keO-Fu-3bx" firstAttribute="trailing" secondItem="Yqh-As-U3k" secondAttribute="trailing" id="D2a-8z-3AD"/>
+                <constraint firstItem="keO-Fu-3bx" firstAttribute="leading" secondItem="Yqh-As-U3k" secondAttribute="leading" id="aRA-DV-77p"/>
+                <constraint firstItem="keO-Fu-3bx" firstAttribute="top" secondItem="DWz-AJ-v9R" secondAttribute="bottom" constant="8" id="bV7-wz-g9U"/>
+                <constraint firstItem="DWz-AJ-v9R" firstAttribute="leading" secondItem="Yqh-As-U3k" secondAttribute="leading" constant="20" id="cjP-tt-cfm"/>
+                <constraint firstItem="rES-Yz-ozz" firstAttribute="top" secondItem="keO-Fu-3bx" secondAttribute="bottom" constant="10" id="iTF-1w-vRq"/>
+                <constraint firstItem="rES-Yz-ozz" firstAttribute="top" secondItem="keO-Fu-3bx" secondAttribute="bottom" constant="10" id="mRU-6z-YGn"/>
+                <constraint firstItem="Yqh-As-U3k" firstAttribute="bottom" secondItem="rES-Yz-ozz" secondAttribute="bottom" constant="10" id="sOn-Im-57L"/>
+                <constraint firstItem="keO-Fu-3bx" firstAttribute="top" secondItem="DWz-AJ-v9R" secondAttribute="bottom" constant="8" id="sUw-eX-Jng"/>
+                <constraint firstAttribute="trailing" secondItem="rES-Yz-ozz" secondAttribute="trailing" constant="20" id="vhC-L6-W1k"/>
+                <constraint firstItem="9l6-AQ-tT3" firstAttribute="top" secondItem="keO-Fu-3bx" secondAttribute="bottom" constant="10" id="zXi-ID-TEq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Yqh-As-U3k"/>
+            <point key="canvasLocation" x="56.5" y="15"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconoapp.jpg" width="653" height="652"/>
+    </resources>
+</document>

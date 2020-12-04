@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogoEditarFilaController" customModule="GestorColas" customModuleProvider="target">
+            <connections>
+                <outlet property="botonBorrar" destination="gaO-AK-h7W" id="3Sk-Js-37y"/>
+                <outlet property="botonCancelar" destination="bTS-7e-DoU" id="QbB-iY-sVO"/>
+                <outlet property="botonEditar" destination="mtU-Uw-whQ" id="RdG-SY-Lpq"/>
+                <outlet property="botonGestionar" destination="RRE-T7-ZNS" id="5k1-1u-wuA"/>
+                <outlet property="botonVaciar" destination="E5R-Y8-ZWW" id="MAm-Wu-upd"/>
+                <outlet property="etiquetaFila" destination="VFx-32-fIc" id="R9O-Aa-lPS"/>
+                <outlet property="view" destination="6YI-yO-iqT" id="Al4-J1-vso"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6YI-yO-iqT" userLabel="AlertView">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="379"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="iconoapp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="h5r-nX-aDD">
+                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0Fa-dw-bb4"/>
+                        <constraint firstAttribute="width" constant="40" id="OVq-5T-4cl"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Editar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLI-0y-L4L">
+                    <rect key="frame" x="68" y="26" width="205" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFx-32-fIc">
+                    <rect key="frame" x="10" y="65" width="269" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtU-Uw-whQ">
+                    <rect key="frame" x="10" y="80" width="269" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="EDITAR FILA">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRE-T7-ZNS">
+                    <rect key="frame" x="10" y="126" width="269" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="GESTIONAR FILA">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5R-Y8-ZWW">
+                    <rect key="frame" x="10" y="172" width="269" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="VACIAR FILA">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-AK-h7W">
+                    <rect key="frame" x="10" y="218" width="269" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="BORRAR FILA">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTS-7e-DoU">
+                    <rect key="frame" x="0.0" y="337" width="110" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="CANCELAR">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kKI-9f-wDw" userLabel="DividerView">
+                    <rect key="frame" x="-17" y="328" width="322" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="h5r-nX-aDD" firstAttribute="top" secondItem="1Lr-Mr-bQs" secondAttribute="top" constant="20" id="1Ca-CZ-K3F"/>
+                <constraint firstItem="1Lr-Mr-bQs" firstAttribute="trailing" secondItem="VFx-32-fIc" secondAttribute="trailing" constant="10" id="3La-NL-rXG"/>
+                <constraint firstItem="gaO-AK-h7W" firstAttribute="centerX" secondItem="E5R-Y8-ZWW" secondAttribute="centerX" id="5In-KV-zNT"/>
+                <constraint firstItem="h5r-nX-aDD" firstAttribute="leading" secondItem="1Lr-Mr-bQs" secondAttribute="leading" constant="20" id="9V0-X2-uDc"/>
+                <constraint firstItem="mtU-Uw-whQ" firstAttribute="width" secondItem="VFx-32-fIc" secondAttribute="width" id="9fs-bO-c7v"/>
+                <constraint firstItem="RRE-T7-ZNS" firstAttribute="centerX" secondItem="mtU-Uw-whQ" secondAttribute="centerX" id="HPJ-zy-lbE"/>
+                <constraint firstItem="VFx-32-fIc" firstAttribute="top" secondItem="1Lr-Mr-bQs" secondAttribute="top" constant="65" id="OgK-jE-Kja"/>
+                <constraint firstItem="E5R-Y8-ZWW" firstAttribute="centerX" secondItem="RRE-T7-ZNS" secondAttribute="centerX" id="RVM-qM-R9h"/>
+                <constraint firstItem="mtU-Uw-whQ" firstAttribute="top" secondItem="VFx-32-fIc" secondAttribute="bottom" constant="15" id="aqH-Kf-OJe"/>
+                <constraint firstItem="E5R-Y8-ZWW" firstAttribute="width" secondItem="RRE-T7-ZNS" secondAttribute="width" id="b5T-e3-sHg"/>
+                <constraint firstItem="RRE-T7-ZNS" firstAttribute="width" secondItem="mtU-Uw-whQ" secondAttribute="width" id="bOV-JR-6yO"/>
+                <constraint firstItem="gaO-AK-h7W" firstAttribute="top" secondItem="E5R-Y8-ZWW" secondAttribute="bottom" constant="10" id="cdF-K7-v7D"/>
+                <constraint firstItem="RRE-T7-ZNS" firstAttribute="top" secondItem="mtU-Uw-whQ" secondAttribute="bottom" constant="10" id="dKr-qx-wyi"/>
+                <constraint firstItem="E5R-Y8-ZWW" firstAttribute="top" secondItem="RRE-T7-ZNS" secondAttribute="bottom" constant="10" id="f46-oS-O32"/>
+                <constraint firstItem="VFx-32-fIc" firstAttribute="leading" secondItem="1Lr-Mr-bQs" secondAttribute="leading" constant="10" id="gTn-4n-8cL"/>
+                <constraint firstItem="mtU-Uw-whQ" firstAttribute="centerX" secondItem="VFx-32-fIc" secondAttribute="centerX" id="qIN-rs-Gwg"/>
+                <constraint firstItem="gaO-AK-h7W" firstAttribute="width" secondItem="E5R-Y8-ZWW" secondAttribute="width" id="yxD-Ui-Zv5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="1Lr-Mr-bQs"/>
+            <point key="canvasLocation" x="56.5" y="-1.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconoapp.jpg" width="653" height="652"/>
+    </resources>
+</document>

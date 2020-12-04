@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vista Admin Fila Controller-->
+        <scene sceneID="3uM-ob-XJ0">
+            <objects>
+                <viewController storyboardIdentifier="VistaAdminFila" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JjV-TE-Wk6" customClass="VistaAdminFilaController" customModule="GestorColas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sZz-lk-NxE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fondo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uiY-cQ-Xdg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ud1-5A-42f">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAV-qD-AyU">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hc9-pf-bB5">
+                                                <rect key="frame" x="20" y="15" width="335" height="41"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <state key="normal" title="REGRESAR">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mAL-8K-GdW">
+                                                <rect key="frame" x="19.5" y="81" width="337.5" height="400"/>
+                                                <color key="backgroundColor" red="0.71956571719999995" green="0.74828272829999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="KIm-Zv-iDi"/>
+                                                </constraints>
+                                                <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Hc9-pf-bB5" secondAttribute="trailing" constant="20" id="EJT-f0-TBw"/>
+                                            <constraint firstItem="Hc9-pf-bB5" firstAttribute="top" secondItem="GAV-qD-AyU" secondAttribute="top" constant="15" id="YgM-Ri-85M"/>
+                                            <constraint firstItem="mAL-8K-GdW" firstAttribute="top" secondItem="Hc9-pf-bB5" secondAttribute="bottom" constant="25" id="dq9-eA-pvN"/>
+                                            <constraint firstAttribute="height" constant="600" id="ojn-QF-RMs"/>
+                                            <constraint firstItem="Hc9-pf-bB5" firstAttribute="leading" secondItem="GAV-qD-AyU" secondAttribute="leading" constant="20" id="stt-sN-su8"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="GAV-qD-AyU" firstAttribute="width" secondItem="Ud1-5A-42f" secondAttribute="width" id="8xG-1A-DVh"/>
+                                    <constraint firstAttribute="trailing" secondItem="GAV-qD-AyU" secondAttribute="trailing" id="GGY-4u-vHB"/>
+                                    <constraint firstItem="mAL-8K-GdW" firstAttribute="centerX" secondItem="Ud1-5A-42f" secondAttribute="centerX" id="NFm-yG-Vq2"/>
+                                    <constraint firstItem="GAV-qD-AyU" firstAttribute="top" secondItem="Ud1-5A-42f" secondAttribute="top" id="Y87-wu-xgM"/>
+                                    <constraint firstAttribute="bottom" secondItem="GAV-qD-AyU" secondAttribute="bottom" id="ext-hl-7hb"/>
+                                    <constraint firstItem="Hc9-pf-bB5" firstAttribute="centerX" secondItem="Ud1-5A-42f" secondAttribute="centerX" id="fgG-FU-ycY"/>
+                                    <constraint firstItem="GAV-qD-AyU" firstAttribute="leading" secondItem="Ud1-5A-42f" secondAttribute="leading" id="tnk-bk-ZtG"/>
+                                    <constraint firstItem="mAL-8K-GdW" firstAttribute="width" secondItem="Ud1-5A-42f" secondAttribute="width" multiplier="0.9" id="vNP-MG-C6t"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ud1-5A-42f" firstAttribute="top" secondItem="V2q-3y-d4h" secondAttribute="top" id="HKk-SJ-BKv"/>
+                            <constraint firstItem="V2q-3y-d4h" firstAttribute="trailing" secondItem="Ud1-5A-42f" secondAttribute="trailing" id="L2b-ff-T1R"/>
+                            <constraint firstItem="Ud1-5A-42f" firstAttribute="leading" secondItem="V2q-3y-d4h" secondAttribute="leading" id="tSp-ap-Smz"/>
+                            <constraint firstItem="V2q-3y-d4h" firstAttribute="bottom" secondItem="Ud1-5A-42f" secondAttribute="bottom" id="yvr-h1-c3Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V2q-3y-d4h"/>
+                    </view>
+                    <connections>
+                        <outlet property="botonRegresar" destination="Hc9-pf-bB5" id="a7i-b3-GnI"/>
+                        <outlet property="imagenFondo" destination="uiY-cQ-Xdg" id="Txs-nB-ild"/>
+                        <outlet property="scroll" destination="Ud1-5A-42f" id="3ZW-KW-pDd"/>
+                        <outlet property="vistaScroll" destination="GAV-qD-AyU" id="j5P-gq-xOj"/>
+                        <outlet property="vistaTabla" destination="mAL-8K-GdW" id="mgU-np-SHA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Taa-r2-cUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="99.400299850074973"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fondo.jpg" width="512" height="800"/>
+    </resources>
+</document>

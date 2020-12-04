@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vista Menu User Controller-->
+        <scene sceneID="S7j-Gz-tJA">
+            <objects>
+                <viewController storyboardIdentifier="VistaMenuUser" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NdB-TE-YXW" customClass="VistaMenuUserController" customModule="GestorColas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PdV-Fw-3Dh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fondo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aD4-gW-CUm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCb-nL-9pb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-5n-Ztm">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALUMNO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilu-uK-Uq4">
+                                                <rect key="frame" x="135.5" y="10" width="104.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwg-DL-xln">
+                                                <rect key="frame" x="115" y="49" width="145" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="145" id="IeD-cx-5y1"/>
+                                                    <constraint firstAttribute="height" constant="145" id="OQg-Xd-l7o"/>
+                                                </constraints>
+                                                <state key="normal" image="Imagenes/logo_calendario.png"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SACAR FICHA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcA-Xn-5g6">
+                                                <rect key="frame" x="108.5" y="204" width="158.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJg-wd-8oa">
+                                                <rect key="frame" x="115" y="243" width="145" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="2h2-eA-AOg"/>
+                                                    <constraint firstAttribute="width" constant="145" id="rIr-yE-Ybx"/>
+                                                </constraints>
+                                                <state key="normal" image="Imagenes/logo_ojo.png"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VER FICHA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jU0-Kg-cbc">
+                                                <rect key="frame" x="126" y="398" width="124" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcL-6x-eqF">
+                                                <rect key="frame" x="115" y="437" width="145" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="Bgn-9l-0eS"/>
+                                                    <constraint firstAttribute="width" constant="145" id="T9R-Ob-YCM"/>
+                                                </constraints>
+                                                <state key="normal" image="Imagenes/logo_candado.png"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAMBIAR CONTRASEÑA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfv-uq-lWr">
+                                                <rect key="frame" x="47.5" y="592" width="279.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZt-Em-wab">
+                                                <rect key="frame" x="115" y="631" width="145" height="145"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="145" id="W61-DH-8B8"/>
+                                                    <constraint firstAttribute="width" constant="145" id="xNT-Br-0Q7"/>
+                                                </constraints>
+                                                <state key="normal" image="Imagenes/logo_salir.png"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SALIR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi5-lZ-WF1">
+                                                <rect key="frame" x="153.5" y="786" width="68" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6Y-wM-7d1">
+                                                <rect key="frame" x="162.5" y="840" width="50" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="E8s-Lf-BAm"/>
+                                                    <constraint firstAttribute="height" constant="40" id="IDH-j5-EJp"/>
+                                                </constraints>
+                                                <state key="normal" image="/Imagenes/logo_advertencia.png"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="YZt-Em-wab" firstAttribute="top" secondItem="bfv-uq-lWr" secondAttribute="bottom" constant="10" id="3Cy-mS-ec4"/>
+                                            <constraint firstItem="zcA-Xn-5g6" firstAttribute="top" secondItem="fwg-DL-xln" secondAttribute="bottom" constant="10" id="8AH-Dd-xaQ"/>
+                                            <constraint firstItem="bfv-uq-lWr" firstAttribute="top" secondItem="JcL-6x-eqF" secondAttribute="bottom" constant="10" id="GXM-8K-ZnJ"/>
+                                            <constraint firstItem="Ilu-uK-Uq4" firstAttribute="top" secondItem="aWc-5n-Ztm" secondAttribute="top" constant="10" id="IXh-y4-nOl"/>
+                                            <constraint firstItem="fwg-DL-xln" firstAttribute="top" secondItem="Ilu-uK-Uq4" secondAttribute="bottom" constant="10" id="M3n-hT-2Y3"/>
+                                            <constraint firstItem="JcL-6x-eqF" firstAttribute="top" secondItem="jU0-Kg-cbc" secondAttribute="bottom" constant="10" id="PHa-bb-IbB"/>
+                                            <constraint firstAttribute="height" constant="900" id="PPR-kZ-LZP"/>
+                                            <constraint firstItem="e6Y-wM-7d1" firstAttribute="top" secondItem="xi5-lZ-WF1" secondAttribute="bottom" constant="25" id="fyV-fS-Uah"/>
+                                            <constraint firstItem="jU0-Kg-cbc" firstAttribute="top" secondItem="dJg-wd-8oa" secondAttribute="bottom" constant="10" id="hce-u8-S3w"/>
+                                            <constraint firstItem="xi5-lZ-WF1" firstAttribute="top" secondItem="YZt-Em-wab" secondAttribute="bottom" constant="10" id="ncB-gZ-8NA"/>
+                                            <constraint firstItem="dJg-wd-8oa" firstAttribute="top" secondItem="zcA-Xn-5g6" secondAttribute="bottom" constant="10" id="sYn-v9-9aA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="xi5-lZ-WF1" firstAttribute="centerX" secondItem="MCb-nL-9pb" secondAttribute="centerX" id="A8i-x1-PX6"/>
+                                    <constraint firstItem="bfv-uq-lWr" firstAttribute="centerX" secondItem="MCb-nL-9pb" secondAttribute="centerX" id="F32-33-eU7"/>
+                                    <constraint firstItem="aWc-5n-Ztm" firstAttribute="leading" secondItem="MCb-nL-9pb" secondAttribute="leading" id="HnM-Ne-Upv"/>
+                                    <constraint firstItem="fwg-DL-xln" firstAttribute="centerX" secondItem="MCb-nL-9pb" secondAttribute="centerX" id="OPX-v0-AgO"/>
+                                    <constraint firstItem="Ilu-uK-Uq4" firstAttribute="centerX" secondItem="MCb-nL-9pb" secondAttribute="centerX" id="SyU-jo-xNM"/>
+                                    <constraint firstItem="zcA-Xn-5g6" firstAttribute="centerX" secondItem="MCb-nL-9pb" secondAttribute="centerX" id="TVN-dO-vnX"/>
+                                    <constraint firstItem="aWc-5n-Ztm" firstAttribute="width" secondItem="MCb-nL-9pb" secondAttribute="width" id="UVw-fP-LgL"/>
+                                    <constraint firstItem="aWc-5n-Ztm" firstAttribute="top" secondItem="MCb-nL-9pb" secondAttribute="top" id="VsB-iv-6z0"/>
+                                    <constraint firstAttribute="trailing" secondItem="aWc-5n-Ztm" secondAttribute="trailing" id="YDh-Ra-Tb5"/>
+                                    <constraint firstItem="jU0-Kg-cbc" firstAttribute="centerX" secondItem="MCb-nL-9pb" secondAttribute="centerX" id="bEV-XT-E9o"/>
+                                    <constraint firstItem="e6Y-wM-7d1" firstAttribute="centerX" secondItem="MCb-nL-9pb" secondAttribute="centerX" id="eIA-kO-0od"/>
+                                    <constraint firstItem="YZt-Em-wab" firstAttribute="centerX" secondItem="MCb-nL-9pb" secondAttribute="centerX" id="nF1-FJ-Prn"/>
+                                    <constraint firstAttribute="bottom" secondItem="aWc-5n-Ztm" secondAttribute="bottom" id="q35-CC-UVU"/>
+                                    <constraint firstItem="dJg-wd-8oa" firstAttribute="centerX" secondItem="MCb-nL-9pb" secondAttribute="centerX" id="t21-Sm-kWX"/>
+                                    <constraint firstItem="JcL-6x-eqF" firstAttribute="centerX" secondItem="MCb-nL-9pb" secondAttribute="centerX" id="wqs-jl-hwC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JKI-9Y-DBc" firstAttribute="trailing" secondItem="MCb-nL-9pb" secondAttribute="trailing" id="NQv-Yh-Jen"/>
+                            <constraint firstItem="MCb-nL-9pb" firstAttribute="leading" secondItem="JKI-9Y-DBc" secondAttribute="leading" id="efB-FB-7uv"/>
+                            <constraint firstItem="JKI-9Y-DBc" firstAttribute="bottom" secondItem="MCb-nL-9pb" secondAttribute="bottom" id="ir0-Fm-yCa"/>
+                            <constraint firstItem="MCb-nL-9pb" firstAttribute="top" secondItem="JKI-9Y-DBc" secondAttribute="top" id="o6C-va-nZX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JKI-9Y-DBc"/>
+                    </view>
+                    <connections>
+                        <outlet property="botonAdvertencia" destination="e6Y-wM-7d1" id="03t-20-8E5"/>
+                        <outlet property="botonContraseña" destination="JcL-6x-eqF" id="qLj-9A-wuV"/>
+                        <outlet property="botonSacar" destination="fwg-DL-xln" id="99W-fE-Qr8"/>
+                        <outlet property="botonVer" destination="dJg-wd-8oa" id="Zkm-h7-tgS"/>
+                        <outlet property="botonsalir" destination="YZt-Em-wab" id="m2b-S9-FHD"/>
+                        <outlet property="etiquetaContraseña" destination="bfv-uq-lWr" id="ueG-wL-nJH"/>
+                        <outlet property="etiquetaSacar" destination="zcA-Xn-5g6" id="adf-jU-hDc"/>
+                        <outlet property="etiquetaSalir" destination="xi5-lZ-WF1" id="9e1-Cg-KIN"/>
+                        <outlet property="etiquetaUsuario" destination="Ilu-uK-Uq4" id="OHj-Mg-lLL"/>
+                        <outlet property="etiquetaVer" destination="jU0-Kg-cbc" id="Tbr-Qi-zqT"/>
+                        <outlet property="imagenFondo" destination="aD4-gW-CUm" id="upx-50-E4L"/>
+                        <outlet property="scroll" destination="MCb-nL-9pb" id="XS2-8k-Eyo"/>
+                        <outlet property="vistaScroll" destination="aWc-5n-Ztm" id="p5h-2q-907"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ln8-bz-nvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.34375" y="100.1953125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="/Imagenes/logo_advertencia.png" width="16" height="16"/>
+        <image name="Imagenes/logo_calendario.png" width="16" height="16"/>
+        <image name="Imagenes/logo_candado.png" width="16" height="16"/>
+        <image name="Imagenes/logo_ojo.png" width="16" height="16"/>
+        <image name="Imagenes/logo_salir.png" width="16" height="16"/>
+        <image name="fondo.jpg" width="512" height="800"/>
+    </resources>
+</document>
